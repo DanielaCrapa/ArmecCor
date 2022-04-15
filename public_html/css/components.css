@@ -1,0 +1,381 @@
+/*Components CSS - v5 - 2016-07-08*/
+/* Tabs */
+.tab-item {
+  background: none repeat scroll 0 0 #fff;
+  display: none;
+  padding: 1.25rem 0;
+}
+.tab-item.tab-active {
+  display: block;
+}
+.tab-content > .tab-label {
+  display: none;
+}
+.tab-nav > .tab-label {
+  float:left;
+}
+a.tab-label, a.tab-label:link, a.tab-label:visited, a.tab-label:hover {
+  background: none repeat scroll 0 0 #262626;
+  color: #fff;
+  margin-right: 1px;
+  padding: 0.625rem 1.25rem;
+  transition: background 0.20s linear 0s;
+  -o-transition: background 0.20s linear 0s;
+  -ms-transition: background 0.20s linear 0s;
+  -moz-transition: background 0.20s linear 0s;
+  -webkit-transition: background 0.20s linear 0s;
+}
+a.tab-label:hover,a.tab-label.active-btn {
+  background: none repeat scroll 0 0 #999;
+}
+.tab-label.active-btn {
+  cursor: default;
+}
+.tab-content {
+  text-align: left;
+}
+@media screen and (max-width:768px) {    
+  .tab-nav > .tab-label {
+    margin: 0.5px 0;
+    width: 100%;
+  }
+}
+/* Custom forms */
+form.customform input, form.customform select, form.customform textarea, form.customform button {
+ font-size:0.9rem;
+ font-family:inherit;
+ margin-bottom:1.25rem;
+} 
+form.customform input, form.customform select {height: 2.7rem;}
+form.customform input, form.customform textarea, form.customform select { 
+ background: none repeat scroll 0 0 #F5F5F5;
+ transition: background 0.20s linear 0s;
+ -o-transition: background 0.20s linear 0s;
+ -ms-transition: background 0.20s linear 0s;
+ -moz-transition: background 0.20s linear 0s;
+ -webkit-transition: background 0.20s linear 0s;
+}
+form.customform input:hover, form.customform textarea:hover, form.customform select:hover, form.customform input:focus, form.customform textarea:focus, form.customform select:focus {background: none repeat scroll 0 0 #fff;}
+form.customform input, form.customform textarea, form.customform select {
+ background: none repeat scroll 0 0 #F5F5F5;
+ border: 1px solid #E0E0E0;
+ padding: 0.625rem;
+ width: 100%;
+}
+form.customform input[type="file"] {
+ border: 1px solid #E0E0E0;
+ height: auto;
+ max-height: 2.7rem;
+ min-height: 2.7rem;
+ padding: 0.4rem;
+ width: 100%;
+}
+form.customform input[type="radio"], form.customform input[type="checkbox"] {
+ margin-right: 0.625rem;
+ width:auto;
+ padding:0;
+ height:auto;
+}
+form.customform option {padding: 0.625rem;}
+form.customform select[multiple="multiple"] {height: auto;}
+form.customform button {
+ width: 100%;
+ background: none repeat scroll 0 0 #152732;
+ border: 0 none;
+ color: #fff;
+ height: 2.7rem;
+ padding: 0.625rem;
+ cursor:pointer;
+ width: 100%;
+ transition: background 0.20s linear 0s;
+ -o-transition: background 0.20s linear 0s;
+ -ms-transition: background 0.20s linear 0s;
+ -moz-transition: background 0.20s linear 0s;
+ -webkit-transition: background 0.20s linear 0s;
+}
+/* Tooltip */
+a.tooltip-container,.tooltip-container {
+  border-bottom:1px dotted;
+  border-bottom-color: color;
+  cursor: help;
+  font-weight: 600;
+}
+a .tooltip-content,.tooltip-content {
+  background: #152732 none repeat scroll 0 0;
+  color: #fff!important;
+  border-radius: 3px;
+  display: none;
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 1.3rem;
+  margin-top: -1.25rem;
+  max-width: 300px;
+  padding: 0.625rem;
+  position: absolute;
+  z-index: 10;
+}
+.tooltip-content::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 7px solid #152732;
+  bottom: -5px;
+  clear: both;
+  content: "";
+  height: 0;
+  left: 50%;
+  margin-left: -5px;
+  position: absolute;
+  width: 0;
+}
+a.tooltip-content.tooltip-bottom,.tooltip-content.tooltip-bottom {
+  margin-top: 1.25rem;
+}
+.tooltip-content.tooltip-bottom::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 0;
+  border-bottom: 7px solid #152732;
+  top: -5px;
+}
+/* Buttons */
+.button,a.button,a.button:link,a.button:active,a.button:visited {
+  background: #777 none repeat scroll 0 0;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 0.825rem 1rem;
+  text-align: center;
+  transition: all 0.20s linear 0s;
+  -o-transition: all 0.20s linear 0s;
+  -ms-transition: all 0.20s linear 0s;
+  -moz-transition: all 0.20s linear 0s;
+  -webkit-transition: all 0.20s linear 0s;
+}
+.button.rounded-btn {
+  border-radius: 4px;
+}
+.button.rounded-full-btn {
+  border-radius: 100px;
+}
+.button:hover {box-shadow: 0 0 10px 100px rgba(255,255,255,0.15) inset;}
+.button.secondary-btn,a.button.secondary-btn,a.button.secondary-btn:link,a.button.secondary-btn:active,a.button.secondary-btn:visited {
+  background: #444 none repeat scroll 0 0;
+}
+.button.cancel-btn,a.button.cancel-btn,a.button.cancel-btn:link,a.button.cancel-btn:active,a.button.cancel-btn:visited {
+  background: #dc003a none repeat scroll 0 0;
+}
+.button.submit-btn,a.button.submit-btn,a.button.submit-btn:link,a.button.submit-btn:active,a.button.submit-btn:visited {
+  background: #b4bf04 none repeat scroll 0 0;
+}
+.button.reload-btn,a.button.reload-btn,a.button.reload-btn:link,a.button.reload-btn:active,a.button.reload-btn:visited {
+  background: #ff9800 none repeat scroll 0 0;
+}
+.button.disabled-btn {
+  cursor: not-allowed!important;
+  opacity: 0.2;
+}
+.button i {
+  background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+  border-radius: 27px;
+  color: #fff!important;
+  display: inline-block;
+  font-size: 0.8rem;
+  height: 27px;
+  line-height: 27px;
+  margin-right: 5px;
+  width: 27px;
+  transition: all 0.20s linear 0s;
+  -o-transition: all 0.20s linear 0s;
+  -ms-transition: all 0.20s linear 0s;
+  -moz-transition: all 0.20s linear 0s;
+  -webkit-transition: all 0.20s linear 0s;
+}
+.button:hover > i {
+  background: rgba(0, 0, 0, 0.06) none repeat scroll 0 0;
+}
+/* BOTON BOOTSTRAP */
+.myButton {
+	box-shadow: 8px 10px 5px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:188px;
+	border:2px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #810e05;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* GALERIA DE FOTOS  */
+body {
+  background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+  min-height: 100vh;
+  font: normal 16px sans-serif;
+  padding: 60px 0;
+}
+
+.container.gallery-container {
+  background-color: #fff;
+  color: #35373a;
+  min-height: 100vh;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+  text-align: center;
+  margin-top: 70px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+}
+
+.gallery-container p.page-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 25px auto;
+  color: #888;
+  font-size: 18px;
+}
+
+.tz-gallery {
+  padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+  border-radius: 4px;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+  body {
+      padding: 0;
+      
+  }
+
+  .container.gallery-container {
+      border-radius: 0;
+  }
+}
+
+.centrado{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+body .content {
+font-size: 14px;
+width: 720px;
+height: 1024px;
+text-align:center;
+border: 1px solid red;
+}
+
+.mybutton2 {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:13px;
+	padding:0px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.mybutton2:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.mybutton2:active {
+	position:relative;
+	top:1px;
+}
+
+.contenedor {
+       width: 100%;
+       margin: 0 auto;
+       overflow: hidden;
+}
+
+
+/* Inicio estructura Responsive Design*/
+/* Más pequeño que 960px (móviles, tablets y navegadores) */
+
+@media screen and (max-width: 960px) {
+  /* Navegadores tipo ipad*/
+  /*definimos un ancho definido en el contenedor principal*/
+  #main{width: 100%;}
+  /*aumentamos tamaño de fuente de forma global*/
+  body, input, textarea { font-size: 110%; }
+  /*redefinimos la estructura para evitar que floten los contenedores y quitamos el bloque lateral para situarlo a continuación del contenido y así mejorar la legibilidad del texto (usabilidad)*/
+  #wrapper #sidebar { float: none; margin: 0;width: auto; }
+  /*hacemos que el bloque de contenido utilice todo el ancho disponible*/
+  #content {margin: 0; width: 100%;background-color: #fff;}
+  /*ocultamos el bloque de búsqueda*/
+  #search-box {display: none; }
+  }
+  
+  @media screen and (max-width: 767px) {
+  /* Navegadores tipo tablet de 7px*/
+  /*definimos un ancho definido en el contenedor principal*/
+  #main{width:100%;}
+  /*aumentamos tamaño de fuente de forma global*/
+  body, input, textarea { font-size: 120%; }
+  }
+  
+  @media screen and (max-width: 479px) {
+  /* Navegadores tipo iphone*/
+  /*definimos un ancho definido en el contenedor principal*/
+  #main{width:100%;}
+  /*aumentamos tamaño de fuente de forma global*/
+  body, input, textarea { font-size: 130%; }
+  /*reducimos el padding del contenedor de cabecera para que se vea correctamente para los móviles más pequeños */
+  #header {padding: 1px; }
+  }
+  
+  @media screen and (max-width: 319px) {
+  /* Navegadores tipo móvil pequeño*/
+  /*definimos un ancho del 100% a partir del ancho de 320px anterior*/
+  #main{width:100%;}
+  }
+  
+  /* Final estructura Responsive */
+
+
+        

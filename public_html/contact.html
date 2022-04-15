@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ARMECOR</title>
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/responsee.css">
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <!-- CUSTOM STYLE -->
+  <link rel="stylesheet" href="css/template-style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet'
+    type='text/css'>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/validation.js"></script>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+
+  <div class="background-dark">
+    <header>
+      <div class="menu_bar">
+
+        <a href="#" class="bt-menu"><span class="icon-menu11"></span>MENU</a>
+
+      </div>
+
+      <nav>
+        <ul>
+          <div style="align-items: center;">
+            <div class="background-dark">
+              <li><a href="index.html"><span class=" icon-home"></span>INICIO</a></li>
+              <li><a href="gallery.html"><span class=" icon-trulia"></span>GALERIA</a></li>
+              <li><a href="contact.html"><span class=" icon-user"></span>CONTACTO</a></li>
+
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+
+
+
+  <!-- MAIN -->
+  <main role="main">
+    <!-- Content -->
+    <article>
+      <div class="section background-dark">
+        <div class="line">
+          <div class="margin">
+
+            <!-- Company Information -->
+            <div class="s-12 m-12 l-6">
+              <h2 class="text-uppercase text-strong margin-left-60 margin-bottom-30">Información de contacto</h2>
+              
+              <div class="margin-left-70 margin-bottom">
+                <img src="../assets/images/ubic.ico" class="icono-ubic"><h4 class="text-strong margin-bottom-0">Ubicación</h4>
+                <p>Samuel Morse 1821<br>
+                  Barrio Sarmiento<br>
+                  Ciudad de Córdoba, Argentina
+                </p>
+                <hr class="break margin-top-bottom-0">
+                <!--direccion 2-->
+                <p>Bartolomé Mitre 68<br>
+                  Alejandro Roca
+                  Córdoba, Argentina
+                </p>
+
+                <img src="../assets/images/mail.ico" class="icono-email"><h4 class="text-strong margin-bottom-0">E-mail</h4>
+                <p><a href="mailto:armeccor@gmail.com" class="text-primary-hover"><b></b> armeccor@gmail.com</a></p>
+                <p><a href="mailto:fabiobdelvalle@hotmail.com" class="text-primary-hover"><b></b>
+                    fabiobdelvalle@hotmail.com</a></p>
+
+                
+                <img src="../assets/images/tel.ico" class="icono-tel"><h4 class="text-strong margin-bottom-0">Teléfonos</h4>
+                <p>3512459109<br>
+
+                </p>
+              </div>
+            </div>
+            <div class="s-12 m-12 l-6">
+              <h2 class="text-uppercase text-strong margin-left-60 margin-bottom-30">Contáctanos</h2>
+              <form class="customform" action="Contacto.php" method="POST">
+
+                <input type="hidden" name="recipient" value="mailto:kape2254@gmail.com">
+                <input type="hidden" name="subject" value="Datos del Formulario">
+                <input type="hidden" name="redirect" value="/index.html">
+
+
+                <div class="margin">
+                  <div class="s-12 m-12 l-6">
+                    <input name="email" class="required email border-radius" placeholder="Tu e-mail" title="Your e-mail"
+                      type="email" />
+                  </div>
+                  <div class="s-12 m-12 l-6">
+                    <input name="nombre" class="name border-radius" placeholder="Tu Nombre" title="nombre"
+                      type="text" />
+                  </div>
+                </div>
+
+                <div class="s-12">
+                  <input name="subject" class="subject border-radius" placeholder="Asunto" title="Subject"
+                    type="text" />
+                </div>
+                <div class="s-12">
+                  <textarea name="mensaje" class="required message border-radius" placeholder="Escriba su Mensaje Aqui"
+                    rows="3"></textarea>
+                </div>
+                <div class="s-12 m-12 l-4"><button
+                    class="submit-form button background-primary border-radius text-white" type="submit"
+                    value="Enviar">ENVIAR</button></div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- MAP -->
+    <div class="s-12 grayscale center mapa-google">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.4525320756343!2d-64.15839698515771!3d-31.429206504016467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2c9b6f16607%3A0xd3a6850f4ede3505!2sSamuel%20Morse%201821%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1594475278773!5m2!1ses!2sar"
+        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+  </main>
+
+  <!--FOOTER -->
+  <footer>
+    <div>
+      <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
+      <div class="s-12 l-6">
+        <p class="text-size-12">Copyright 2022, Design by CRAPPE</p>
+        <p class="text-size-12">Do not use the images in your website.</p>
+      </div>
+      <div class="s-12 l-6">
+        <a class="right text-size-12" href="" title="h">Design and coding<br>by CRAPPE</a>
+      </div>
+    </div>
+    
+  </footer>
+  <script src="js/jquery-latest.js"></script>
+  <script src="menu.js"></script>
+</body>
