@@ -1,4 +1,6 @@
 <?php
+
+error_reporting(0);
 $nombre= $_POST['nombre'];
 $mensaje= $_POST['mensaje'];
 $email= $_POST['email'];
@@ -22,6 +24,5 @@ $mensaje ="mensaje: $mensaje\r\n";
 
 mail($destino, $subject, $mensaje, $header);
 header('Location: ' . $redirect);
+
 ?>
-
-
