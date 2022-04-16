@@ -1081,8 +1081,8 @@ i.icon-circle-small {
 }
 .owl-carousel .owl-nav div {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  color: #7697a2!important;
-  border: 1px solid #7697a2;
+  color: #000000!important;
+  border: 1px solid #000000;
   border-radius: 0;
   font-family: mfg;
   height: 40px;
