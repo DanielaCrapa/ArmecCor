@@ -101,7 +101,7 @@ a.tooltip-container,.tooltip-container {
   font-weight: 600;
 }
 a .tooltip-content,.tooltip-content {
-  background: #152732 none repeat scroll 0 0;
+  background: #555555 none repeat scroll 0 0;
   color: #fff!important;
   border-radius: 3px;
   display: none;

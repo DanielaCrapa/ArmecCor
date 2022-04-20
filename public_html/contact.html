@@ -94,36 +94,28 @@
             </div>
             <div class="s-12 m-12 l-6">
               <h2 class="text-uppercase text-strong margin-left-60 margin-bottom-30">Contáctanos</h2>
-              <form class="customform" action="Contacto.php" method="POST">
-
-                <input type="hidden" name="recipient" value="mailto:danielacrapa@gmail.com">
-                <input type="hidden" name="asunto" value="Datos del Formulario">
-                <input type="hidden" name="redirect" value="/index.html">
-
-
+              <form class="customform text-white" action="Contacto.php" method="post">
+                <input type="hidden" name="recipient" value="danielacrapa@gmail.com">
+                <input type="hidden" name="subject" value="Consulta">
+                <input type="hidden" name="redirect" value="\index.html">
                 <div class="margin">
                   <div class="s-12 m-12 l-6">
-                    <input name="email" class="required email border-radius" placeholder="Tu e-mail" title="Your e-mail"
-                      type="email" />
+                    <input name="email" class="required email border-radius" placeholder="Tu e-mail" title="Your e-mail" type="email" />
                   </div>
                   <div class="s-12 m-12 l-6">
-                    <input name="nombre" class="name border-radius" placeholder="Tu Nombre" title="nombre"
-                      type="text" />
+                    <input name="nombre" class="name border-radius" placeholder="Tu Nombre" title="Your name" type="text" />
                   </div>
                 </div>
-
                 <div class="s-12">
                   <input name="asunto" class="subject border-radius" placeholder="Asunto" title="Subject"
                     type="text" />
                 </div>
                 <div class="s-12">
-                  <textarea name="mensaje" class="required message border-radius" placeholder="Escriba su Mensaje Aqui"
+                  <textarea name="mensaje" class="required message border-radius" placeholder="Ecriba su Mensaje Aqui"
                     rows="3"></textarea>
                 </div>
-                <div class="s-12 m-12 l-4"><button
-                    class="submit-form button background-primary border-radius text-white" type="submit"
-                    name="Enviar">ENVIAR</button></div>
-
+                <div class="s-12"> <button class="submit-form button background-primary border-radius text-white"
+                    type="submit" name="enviar">ENVIAR</button></div>
               </form>
             </div>
           </div>
