@@ -74,8 +74,9 @@ section {
 }
 
 .Iam {
-    padding: 0em 7.5em;
-    margin-bottom: 170px;
+    padding: 1em 6.5em;
+    margin-left: 60px;
+    margin-bottom: 150px;
     font: normal 30px/40px Montserrat, sans-serif;
     color: rgb(92, 92, 92);
 }
@@ -106,9 +107,10 @@ section {
 
 .AR {
     float: left;
-    border-radius: 15px;
-    margin-top: 65px;
-    margin-left: 70px;
+    border-radius: 16px;
+    margin-top: 63px;
+    margin-left: 100px;
+    margin-right:40px;
 }
 
 .Iam .innerIam {
@@ -336,32 +338,49 @@ section {
 }
 
 .mapa-google {
+    background-color: #272424;
+}
+
+footer{
     background-color: #242727;
+}
+.desing{
+    font-size: 11px;
+}
+.icono-gallery{
+    margin: 3px;
+    width: 18px;
+    height: 18px;
+    float: left;
 }
 
 /* eligue los px desde los que aparece el menuburguer */
 @media screen and (max-width:800px) {
 
     header nav {
-        width: 50%;
+        width: 40%;
         height: 100%;
         left: -100%;
         margin: 0;
         position: fixed;
-        background-color: rgb(110, 110, 110);
-        opacity: .5;
+
+    }
+    header nav ul {
+        margin-top: 40%;
+        margin-left: 8%;
+        opacity: .9;
+        background-color: #242727;
     }
 
     header nav ul li {
         display: block;
         float: none;
-        border-bottom: 1px solid rgb(255, 255, 255, .3);
+        border-bottom: 1px solid rgb(255, 255, 255,);
     }
 
     .menu_bar {
         display: block;
         width: 100%;
-        background: #ccc;
     }
 
     .menu_bar .bt-menu {
@@ -377,15 +396,9 @@ section {
         box-sizing: border-box;
 
     }
-
-    /* .menu_bar span {
-
-            float: right;
-            font-size: 40px;
-
-
-        } */
-
+    .h6{
+    padding-top: 50px;
+}
     div#nav {
         text-align: center;
     }
@@ -393,6 +406,20 @@ section {
     div#nav ul {
         display: inline-block;
     }
-
-
+    .AR {
+        margin-top: 75px;
+        margin-left: 65px;
+    }
+    .Iam p{
+        margin-left: -150px;
+    }
+    .Iam b {
+        float: left;
+        overflow: hidden;
+        position: relative;
+        margin-top: 2px;
+        width: 150px;
+        height: 60px;
+        top: 5px;
+    }
 }
