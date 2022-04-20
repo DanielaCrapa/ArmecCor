@@ -1,28 +1,20 @@
 <?php
 
-error_reporting(0);
-$nombre= $_POST['nombre'];
-$mensaje= $_POST['mensaje'];
-$email= $_POST['email'];
-$destino = $_REQUEST['recipient'];
-$subject = $_REQUEST['subject'];
-$redirect = $_REQUEST['redirect'];
-
-
-
-if ($nombre != '') {
-$header = "From: $nombre <$email>\r\n";
+if (isset ($_POST['enviar'])){
+    if (!empty($_POST['email']) && !empty($_POST ['nombre']) && !empty($_POST ['mensaje']) && !empty($_POST['asunto'])) {
+        $email = $_POST['email'];
+        $nombre = $_POST['nombre'];
+        $mensaje = $_POST['mensaje'];
+        $subject = $_POST['subject'];
+        $header = "From: noreply@gmail.com" . "/r/n";
+        $header = "Reply-To: example@gmail.com" . "/r/n";
+        $header = "Xmailer: PHP/" . phpversion();
+        $mail = @mail( $email, $nombre, $subject, $mensaje, $header);
+        if ($email) {
+            echo "<h4> ¡Su mensaje ha sido enviado con éxito! <h4>";
+        } else {
+            echo "Ha habido un error en el envío. Por favor inténtelo nuevamente.";
+        }
+    }
 }
-else {
-$header = "From: $email\r\n";
-}
-$header .= "Return-Path: $email\r\n";
-$nombre = "Nombre: $nombre\r\n";
-$email ="Email: $email\r\n";
-$mensaje ="mensaje: $mensaje\r\n";
-
-
-mail($destino, $subject, $mensaje, $header);
-header('Location: ' . $redirect);
-
 ?>

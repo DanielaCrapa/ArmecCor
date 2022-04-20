@@ -210,24 +210,28 @@
           <!-- Collumn 3 -->
           <div class="s-12 m-12 l-6">
             <h4 class="text-uppercase text-strong">Deja tu Mensaje</h4>
-            <form class="customform text-white">
-
+            <form class="customform text-white" action="Contacto.php" method="post">
+              <input type="hidden" name="recipient" value="danielacrapa@gmail.com">
+              <input type="hidden" name="subject" value="Consulta">
+              <input type="hidden" name="redirect" value="\index.html">
               <div class="margin">
                 <div class="s-12 m-12 l-6">
-                  <input name="email" class="required email border-radius" placeholder="Tu e-mail" title="Your e-mail"
-                    type="text" />
+                  <input name="email" class="required email border-radius" placeholder="Tu e-mail" title="Your e-mail" type="email" />
                 </div>
                 <div class="s-12 m-12 l-6">
-                  <input name="name" class="name border-radius" placeholder="Tu Nombre" title="Your name" type="text" />
+                  <input name="nombre" class="name border-radius" placeholder="Tu Nombre" title="Your name" type="text" />
                 </div>
               </div>
-
               <div class="s-12">
-                <textarea name="message" class="required message border-radius" placeholder="Ecriba su Mensaje Aqui"
+                <input name="asunto" class="subject border-radius" placeholder="Asunto" title="Subject"
+                  type="text" />
+              </div>
+              <div class="s-12">
+                <textarea name="mensaje" class="required message border-radius" placeholder="Ecriba su Mensaje Aqui"
                   rows="3"></textarea>
               </div>
               <div class="s-12"> <button class="submit-form button background-primary border-radius text-white"
-                  type="submit">ENVIAR</button></div>
+                  type="submit" name="enviar">ENVIAR</button></div>
             </form>
           </div>
         </div>
@@ -241,7 +245,7 @@
         <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 38, 51, 0.80);">
         <div class="s-12 l-9">
           <p class="text-size-12">Copyright 2022, Design by <b>CRAPPE</b>. [Do not use the images in your website.]</p>
-          <a href="" title="crappe.dev@gmail.com" class="desing">Design and coding by <b>CRAPPE</b></a>
+          <a href="" title="crappe.devs@gmail.com" class="desing">Design and coding by <b>CRAPPE</b></a>
         </div>
       </div>
     </section>
