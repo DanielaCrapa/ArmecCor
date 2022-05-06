@@ -11,7 +11,7 @@ p {
   line-height: 1.6rem;
 }
 a, a:link, a:visited, a:hover, a:active { 
-color: #777;
+color: rgb(255, 255, 255);
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000;                                         
@@ -435,7 +435,7 @@ aside.aside-left {
 } 
 .background-dark, .background-dark p, a.background-dark, a.background-dark:visited, a.background-dark:link, .background-dark a, .background-dark a:link, .background-dark a:visited, .background-dark a:hover, .background-dark a:active,
 .primary-color-dark .background-primary, .primary-color-dark .background-primary p, .primary-color-dark a.background-primary, .primary-color-dark a.background-primary:visited, .primary-color-dark a.background-primary:link, .primary-color-dark a.background-primary:visited, .primary-color-dark .background-primary a, .primary-color-dark .background-primary a:link, .primary-color-dark .background-primary a:visited, .primary-color-dark .background-primary a:hover, .primary-color-dark .background-primary a:active {
-  color: #7697A2;
+  color: white;
 }
 .background-white h1, .background-white h2, .background-white h3, .background-white h4, .background-white h5, .background-white h6,
 .background-white .h1, .background-white .h2, .background-white .h3, .background-white .h4, .background-white .h5, .background-white .h6, 
