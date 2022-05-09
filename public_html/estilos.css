@@ -10,7 +10,7 @@ header nav {
     height: 165px;
     margin: 0;
     background-image: url(img/vinilo2.png);
-    position: fixed;
+    /* position: fixed; */
 }
 
 .menu_bar {
@@ -57,6 +57,7 @@ header nav ul li span {
 
 section {
     padding: 20px;
+    
 }
 
 .line {
