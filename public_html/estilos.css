@@ -10,7 +10,7 @@ header nav {
     height: 165px;
     margin: 0;
     background-image: url(img/vinilo2.png);
-    /* position: fixed; */
+    position: fixed;
 }
 
 .menu_bar {
@@ -363,7 +363,6 @@ footer{
     header nav {
         width: 33%;
         height: 100%;
-        margin-top: 70px;
         background-image: none;
     }
     
@@ -380,7 +379,6 @@ footer{
     }
 
     .menu_bar {        
-        position: fixed;
         display: block;
         width: 100%;
     }
