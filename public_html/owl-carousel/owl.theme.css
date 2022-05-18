@@ -49,13 +49,10 @@
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
 
-.volt{
-  padding: 0;
-  margin: 0;
-}
+
 .item img{
   width: 100%;
-  height: 400px;
+  height: 434px;
   cursor: pointer;
   object-fit: cover;
 }

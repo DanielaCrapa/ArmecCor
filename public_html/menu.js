@@ -1,10 +1,12 @@
 $(document).ready(main);
  
-var contador = 1;
+
  
 function main(){
+
+	var contador = 0;
 	$('.menu_bar').click(function(){
-		// $('nav').toggle(); 
+		 //$('nav').toggle(); 
  
 		if(contador == 1){
 			$('nav').animate({
@@ -12,10 +14,11 @@ function main(){
 			});
 			contador = 0;
 		} else {
-			contador = 1;
+			
 			$('nav').animate({
 				left: '-100%'
 			});
+			contador = 1;
 		}
  
 	});
